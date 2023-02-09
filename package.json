@@ -1,0 +1,23 @@
+{
+  "name": "atelier-9-station-meteo",
+  "version": "1.0.0",
+  "description": "Api web station météo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API",
+    "Express",
+    "JS",
+    "Node"
+  ],
+  "author": "Thomas Franchi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
