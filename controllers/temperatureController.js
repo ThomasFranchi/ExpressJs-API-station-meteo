@@ -44,12 +44,12 @@ const dateTimeFormat = Intl.DateTimeFormat('fr-FR', {
     // Respond to the GET from the string "/:params". 
     getTemperature: (req, res) => {
         const {stationName} = req.params;
-
-        const filePath = path.join(__dirname, `../data/{stationName}.txt`);
+        const filePath = path.join(__dirname, `../data/${stationName}.txt`);
         // Display 404 error message if the stationName is not found 
         res.sendFile(filePath, (err) => {
             if (err) {
-                res.status(404).end();
+                res.status(404).json({message: "This station name doesn't exist"});
+                // res.status(404).end()
             }
         });
 
